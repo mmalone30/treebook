@@ -29,4 +29,19 @@ body {
 	margin-top:1em;
 }
 
+.main-content {
+	background: whitesmoke;
+	padding-bottom: 4em;
+}
+
+.main-footer {
+	border-top:1px solid #d5d5d5;
+	padding:1em 0;
+}
+
+.page-header img {
+		float:left;
+		margin-right: 1em;
+		border-radius: 3px 3px  0 0;
+}
 
