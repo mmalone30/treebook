@@ -18,6 +18,13 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+* {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+
 .alert {
 	margin-top:1em;
 }

@@ -6,8 +6,14 @@
 
 <% @statuses.each do |status| %>
 	<div class="status">
-		<h2><%= status.user.full_name %></h2>
-		<p><%= status.content %></p>
+		
+			
+			<%= image_tag status.user.gravatar_url %>
+		
+			<h2><%= status.user.full_name %></h2>
+			<p><%= status.content %></p>
+		
+	
 		<div class="meta">
 			<%= link_to time_ago_in_words(status.created_at) + " ago", status %>
 			<span class="admin">
@@ -15,5 +21,6 @@
 				<%= link_to "Delete", status, method: :delete, data: {confirm: "Are you sure you want to delete this?"} %>
 			</span>
 		</div>
+		
 	</div>
 <% end %>
