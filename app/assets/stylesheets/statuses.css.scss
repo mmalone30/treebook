@@ -18,7 +18,7 @@
 	}
 	h2 {
 		font-weight:bold;
-		color:desaturate(darken(adjust_hue(#0088cc, 88), 7), 6);
+		color:darken(adjust_hue(#0088cc, 333), 6);
 		font-size:1em;
 		line-height:1;
 		margin:0;
