@@ -3,16 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .status {
-	box-shadow:0 1px 3px #d5d5d5;
+	box-shadow:0 1px 3px #ccc;
 	margin-top:2em;
-	
+	border-radius:3px;
 	&:first-child {
 		margin-top:1em;
 	}
 	p {
 		
 		font-size:1em;
-		padding:1em;
+		padding:2em 1em;
 		margin:0;
 		padding-bottom:1px solid #d5d5d5;
 	}
@@ -34,10 +34,11 @@
 		display: none;
 	}
 	.meta {
-		padding:1em;
+		padding:0.5em 1em;
 		background:#fafafa;
 		font-size:0.85em;
 		border-top:1px solid #eee;
+		border-radius:0 0 3px 3px;
 	}
 	&.hover {
 		
