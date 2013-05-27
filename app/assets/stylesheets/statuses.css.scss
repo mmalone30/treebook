@@ -3,16 +3,44 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .status {
-	border-bottom: 1px solid #e5e5e5;
-	padding:1em 0;
+	box-shadow:0 1px 3px #d5d5d5;
+	margin-top:2em;
+	
+	&:first-child {
+		margin-top:1em;
+	}
 	p {
-		margin:0.25em 0;
+		
+		font-size:1em;
+		padding:1em;
+		margin:0;
+		padding-bottom:1px solid #d5d5d5;
+	}
+	h2 {
+		font-weight:bold;
+		color:desaturate(darken(adjust_hue(#0088cc, 88), 7), 6);
+		font-size:1em;
+		line-height:1;
+		margin:0;
+		
+		
+		box-shadow:inset 0 1px 0 white;
+		border-radius:3px 3px 0 0;
+		padding:1em 0 0 1em;
+		
+		
 	}
 	.admin {
 		display: none;
 	}
+	.meta {
+		padding:1em;
+		background:#fafafa;
+		font-size:0.85em;
+		border-top:1px solid #eee;
+	}
 	&.hover {
-		background: #fafafa;
+		
 		.admin {
 			display: inline;
 		}
@@ -31,4 +59,11 @@
 	-webkit-box-shadow: 0 1px 3px #d5d5d5;
 	-moz-box-shadow: 0 1px 3px #d5d5d5;
 	box-shadow: 0 1px 3px #d5d5d5;
+}
+
+.notice, 
+.alert {
+	&:empty {
+		display:none;
+	}
 }
