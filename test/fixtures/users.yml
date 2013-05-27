@@ -9,3 +9,9 @@ jim:
    last_name: "Hoskins"
    email: "jim@gmail.com"
    profile_name: "jim"
+
+mike:
+   first_name: "Mike"
+   last_name: "Frog"
+   email: "mike@gmail.com"
+   profile_name: "mikethefrog"
