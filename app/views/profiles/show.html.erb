@@ -1,9 +1,15 @@
 <div class="page-header">
 	<%= image_tag @user.gravatar_url %>
 	<h1><%= @user.full_name %></h1>
-	<%= link_to "Edit Profile", edit_user_registration_path %>
-	&middot;
-	<%= link_to "Add Friend", new_user_friendship_path(friend_id: @user) %>
+	<% if @user.full_name == current_user.full_name %>
+		<%= link_to "Edit Profile", edit_user_registration_path %>
+
+	<% end %>
+	
+	<% if @user.full_name != current_user.full_name %>
+		<%= link_to "Add Friend", new_user_friendship_path(friend_id: @user) %>
+	<% end %>
+		
 </div>
 
 <% if @statuses %>
